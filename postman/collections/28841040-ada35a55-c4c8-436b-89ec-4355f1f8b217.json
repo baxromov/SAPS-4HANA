@@ -795,8 +795,17 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "{{url}}/sap/opu/odata4/sap/api_product/srvd_a2x/sap/product/0002/Product/{Product}",
+					"raw": "{{url}}/sap/opu/odata4/sap/api_product/srvd_a2x/sap/product/0002/Product/21",
 					"host": [
 						"{{url}}"
 					],
@@ -811,7 +820,7 @@
 						"product",
 						"0002",
 						"Product",
-						"{Product}"
+						"21"
 					]
 				}
 			},
