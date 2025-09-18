@@ -788,7 +788,32 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "APIKey",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/sap/opu/odata4/sap/api_product/srvd_a2x/sap/product/0002/Product/{Product}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_product",
+						"srvd_a2x",
+						"sap",
+						"product",
+						"0002",
+						"Product",
+						"{Product}"
+					]
+				}
 			},
 			"response": []
 		}
