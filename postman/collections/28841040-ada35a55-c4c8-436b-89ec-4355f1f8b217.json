@@ -605,7 +605,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrder?top=50",
+					"raw": "{{url}}/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrder?top=50&$filter=SalesOrder eq '1'",
 					"host": [
 						"{{url}}"
 					],
@@ -625,11 +625,147 @@
 						{
 							"key": "top",
 							"value": "50"
+						},
+						{
+							"key": "$filter",
+							"value": "SalesOrder eq '1'",
+							"type": "text"
 						}
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "28841040-71823b91-2550-4f90-a3f4-a0c4f938742f",
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APIKey",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrder?top=50&$filter=SalesOrder eq '1'",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sap",
+								"opu",
+								"odata4",
+								"sap",
+								"api_salesorder",
+								"srvd_a2x",
+								"sap",
+								"salesorder",
+								"0001",
+								"SalesOrder"
+							],
+							"query": [
+								{
+									"key": "top",
+									"value": "50"
+								},
+								{
+									"key": "$filter",
+									"value": "SalesOrder eq '1'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 18 Sep 2025 11:07:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "sap-authenticated",
+							"value": "true"
+						},
+						{
+							"key": "odata-version",
+							"value": "4.0"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "sap-server",
+							"value": "true"
+						},
+						{
+							"key": "sap-perf-fesrec",
+							"value": "560984.000000"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "sap-passport-component",
+							"value": "none"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "false"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "set-cookie, origin, accept, maxdataserviceversion, x-csrf-token, apikey, dataserviceversion, accept-language, x-http-method,content-type,X-Requested-With"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "set-cookie, x-csrf-token, x-http-method"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"@odata.context\": \"$metadata#SalesOrder\",\n    \"@odata.metadataEtag\": \"W/\\\"20250722001833\\\"\",\n    \"value\": [\n        {\n            \"@odata.etag\": \"W/\\\"SADL-201609020615471257050C~20160902061547.1257050\\\"\",\n            \"SalesOrder\": \"1\",\n            \"SalesOrderType\": \"TA\",\n            \"SalesOrderProcessingType\": \"\",\n            \"SoldToParty\": \"17100001\",\n            \"SalesOrganization\": \"1710\",\n            \"DistributionChannel\": \"10\",\n            \"ReferenceDistributionChannel\": \"10\",\n            \"OrganizationDivision\": \"00\",\n            \"SalesOffice\": \"\",\n            \"SalesGroup\": \"\",\n            \"SalesDistrict\": \"\",\n            \"CreatedByUser\": \"CB9980000027\",\n            \"CreationDate\": \"2016-08-17\",\n            \"CreationTime\": \"04:02:30\",\n            \"LastChangeDateTime\": \"2016-09-02T06:15:47.125705Z\",\n            \"LastChangedByUser\": \"\",\n            \"PurchaseOrderByCustomer\": \"gfh\",\n            \"PurchaseOrderByShipToParty\": \"\",\n            \"CustomerPurchaseOrderType\": \"\",\n            \"CustomerPurchaseOrderDate\": null,\n            \"CorrespncExternalReference\": \"\",\n            \"CorrespncExtRefByShipToParty\": \"\",\n            \"BusinessSolutionOrder\": \"\",\n            \"ReferenceSDDocument\": null,\n            \"ReferenceSDDocumentCategory\": null,\n            \"SDDocumentReason\": \"\",\n            \"SalesOrderDate\": \"2016-08-17\",\n            \"RequestedDeliveryDate\": \"2016-08-17\",\n            \"PricingDate\": \"2016-08-17\",\n            \"ServicesRenderedDate\": null,\n            \"BillingDocumentDate\": \"2016-08-17\",\n            \"TotalNetAmount\": 52.65,\n            \"TransactionCurrency\": \"USD\",\n            \"DeliveryDateTypeRule\": \"\",\n            \"ShippingCondition\": \"01\",\n            \"CompleteDeliveryIsDefined\": false,\n            \"SlsDocIsRlvtForProofOfDeliv\": false,\n            \"ShippingType\": \"\",\n            \"ReceivingPoint\": \"\",\n            \"IncotermsClassification\": \"EXW\",\n            \"IncotermsVersion\": \"\",\n            \"IncotermsLocation1\": \"Palo Alto\",\n            \"IncotermsLocation2\": \"\",\n            \"SDPricingProcedure\": \"Y17101\",\n            \"CustomerPriceGroup\": \"\",\n            \"PriceListType\": \"\",\n            \"FixedValueDate\": null,\n            \"TaxDepartureCountry\": \"\",\n            \"VATRegistrationCountry\": \"\",\n            \"IsEUTriangularDeal\": false,\n            \"CustomerPaymentTerms\": \"0004\",\n            \"PaymentMethod\": \"\",\n            \"BillingCompanyCode\": \"1710\",\n            \"ControllingArea\": \"A000\",\n            \"CustomerAccountAssignmentGroup\": \"01\",\n            \"AssignmentReference\": \"\",\n            \"AccountingDocExternalReference\": \"\",\n            \"CustomerCreditAccount\": \"17100001\",\n            \"HeaderBillingBlockReason\": \"\",\n            \"DeliveryBlockReason\": \"\",\n            \"SalesOrderApprovalReason\": \"\",\n            \"SlsContrAutoAssgmtIDForSlsOrd\": null,\n            \"CustomerGroup\": \"01\",\n            \"AdditionalCustomerGroup1\": \"\",\n            \"AdditionalCustomerGroup2\": \"\",\n            \"AdditionalCustomerGroup3\": \"\",\n            \"AdditionalCustomerGroup4\": \"\",\n            \"AdditionalCustomerGroup5\": \"\",\n            \"OverallSDProcessStatus\": \"C\",\n            \"OverallDeliveryBlockStatus\": \"\",\n            \"OverallBillingBlockStatus\": \"\",\n            \"OverallDeliveryStatus\": \"C\",\n            \"TotalCreditCheckStatus\": \"\",\n            \"OverallSDDocumentRejectionSts\": \"A\",\n            \"TotalBlockStatus\": \"\",\n            \"HdrGeneralIncompletionStatus\": \"C\",\n            \"OvrlItmGeneralIncompletionSts\": \"C\",\n            \"OverallSDDocReferenceStatus\": \"\",\n            \"SalesDocApprovalStatus\": \"\",\n            \"OverallChmlCmplncStatus\": \"\",\n            \"OverallDangerousGoodsStatus\": \"\",\n            \"OverallSafetyDataSheetStatus\": \"\",\n            \"OverallTrdCmplncEmbargoSts\": \"\",\n            \"OvrlTrdCmplncSnctndListChkSts\": \"\",\n            \"OvrlTrdCmplncLegalCtrlChkSts\": \"\",\n            \"SalesOrderDownPaymentStatus\": \"\",\n            \"OverallOrdReltdBillgStatus\": \"\",\n            \"SAP__Messages\": []\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"event": [
