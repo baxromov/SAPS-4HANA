@@ -781,7 +781,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "Product Update",
 			"id": "28841040-6620fb4f-4776-4ee9-8d29-7d415aa6d309",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
