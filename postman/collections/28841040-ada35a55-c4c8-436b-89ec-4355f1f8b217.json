@@ -258,7 +258,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/sap/opu/odata/sap/API_PURCHASEORDER_PROCESS_SRV/A_PurchaseOrder?$format=json",
+					"raw": "{{url}}/sap/opu/odata/sap/API_PURCHASEORDER_PROCESS_SRV/A_PurchaseOrder?$format=json&$filter=PurchaseOrder eq '4500000001'",
 					"host": [
 						"{{url}}"
 					],
@@ -274,6 +274,10 @@
 						{
 							"key": "$format",
 							"value": "json"
+						},
+						{
+							"key": "$filter",
+							"value": "PurchaseOrder eq '4500000001'"
 						}
 					]
 				}
@@ -435,7 +439,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrderItem?top=50",
+					"raw": "{{url}}/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrderItem?top=50&$filter=SalesOrder eq '1'",
 					"host": [
 						"{{url}}"
 					],
@@ -455,6 +459,11 @@
 						{
 							"key": "top",
 							"value": "50"
+						},
+						{
+							"key": "$filter",
+							"value": "SalesOrder eq '1'",
+							"type": "text"
 						}
 					]
 				}
